@@ -16,8 +16,3 @@ require('./listen')({
   logger: metrics.createTracker('recommendRpc'),
   url: config.get('private:RABBITMQ_URL')
 });
-
-require('./client')({
-  logger: metrics.createTracker('recommendRpc'),
-  url: config.get('private:RABBITMQ_URL')
-});

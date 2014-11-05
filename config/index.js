@@ -5,17 +5,17 @@ var lowerEnv = ENV.toLowerCase();
 
 nconf.add('local', {
   type: 'file',
-  file: 'config/local.json'
+  file: __dirname + '/local.json'
 });
 
 nconf.add(lowerEnv, {
   type: 'file',
-  file: 'config/' + lowerEnv + '.json'
+  file: __dirname + '/' + lowerEnv + '.json'
 });
 
 nconf.add('global', {
   type: 'file',
-  file: 'config/global.json'
+  file: __dirname + '/global.json'
 });
 
 nconf.set('ENVIRONMENT', ENV.toUpperCase());
