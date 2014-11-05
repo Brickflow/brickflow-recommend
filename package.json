@@ -1,0 +1,31 @@
+{
+  "name": "brickflow-recommend",
+  "version": "0.0.0",
+  "description": "Brickflow Recommendation Engine",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "brickflow",
+    "recommend",
+    "rec"
+  ],
+  "author": "Laci Szucs <ifrozen@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "amqp": "^0.2.0",
+    "amqp-rpc": "0.0.8",
+    "async": "^0.9.0",
+    "brickflow-common": "git+ssh://git@github.com/Brickflow/brickflow-common.git",
+    "brickflow-logger": "0.0.3",
+    "lodash": "^2.4.1",
+    "mongodb": "^1.4.19",
+    "mongoose": "^3.8.18",
+    "mongoose-createdmodified": "0.0.2",
+    "mongoose-findorcreate": "^0.1.2",
+    "nconf": "^0.6.9",
+    "newrelic": "^1.12.1",
+    "tumblr-rpc": "0.0.1"
+  }
+}

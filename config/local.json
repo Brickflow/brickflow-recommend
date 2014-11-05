@@ -1,0 +1,30 @@
+{
+  "HOST": "0.0.0.0",
+  "TUMBLR_RECOMMENDATION_POSTS_TIMEOUT": 30000,
+  "TUMBLR_RECOMMENDATION_ALL_POSTS_TIMEOUT": 30000,
+
+  "ACTIVE_USER_SHARE_HOURS": 0,
+  "HAS_MIXPANEL": true,
+  "private": {
+    "FACEBOOK_APP_ID": "1474823692747300",
+    "FACEBOOK_APP_SECRET": "541a17f347e5830ca1a08037fa4d0902",
+    "FACEBOOK_CALLBACK": "http://0.0.0.0:8080/auth/facebook/callback",
+    "NEMAKTIV_______dbaccess":"mongodb://brickflow:L1711MNaK@candidate.32.mongolayer.com:10226,candidate.33.mongolayer.com:10226/BrickflowProd",
+    "NEMAKTIV_______RABBITMQ_CREDENTIALS": {
+      "host": "kitana.brickflow.com",
+      "login": "brickflow",
+      "password": "L1711MNaK"
+    },
+    "SOLR_CONFIG": {
+      "host": "reptile.brickflow.com",
+      "port": 8080
+    },
+    "SOLR_CREDENTIALS": {
+      "username": "brickflow",
+      "password": "L1711MNaK"
+    }
+  },
+  "BANNED_HASHTAGS": [
+
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "HOST": "brickflow.com",
+  "PORT": 80,
+  "NODE_PORT": 8080,
+  "DEBUG": false,
+  "HAS_MIXPANEL": false,
+  "MIXPANEL_TOKEN": "8046b6a755989b3a73f9c8d3ea17a879",
+  "HAS_GA": true,
+  "GA_ID": "UA-51182038-1",
+  "private": {
+    "password": "L1711MNaK",
+    "NEW_RELIC_APP_KEY": "3340f6f0b36bc863da1cddce2ad1e8bf192d74bb",
+    "GIPHY_APP_KEY": "dc6zaTOxFJmzC",
+    "TUMBLR_APP_KEY": "6EI0oz8lW2cAVx0WXQKe7ZVAIJIodHFFvb1HfNu0DaYEDENFw0",
+    "TUMBLR_APP_SECRET": "fY8uxfhJoXOgQYuy72yoJ0N1SgKIT6laokooEXOx24AJu7a8xm",
+    "FACEBOOK_APP_ID": "677945925554034",
+    "FACEBOOK_APP_SECRET": "0f220d3a5fc04e9bb5b79dce994394a9",
+    "FACEBOOK_CALLBACK": "http://brickflow.com/auth/facebook/callback",
+    "dbaccess":"mongodb://brickflow:L1711MNaK@candidate.32.mongolayer.com:10226,candidate.33.mongolayer.com:10226/BrickflowProd",
+    "TWITTER_KEY": "uOKTGF5r0tmX7mxNTf09A",
+    "TWITTER_SECRET": "DMKvMGp1Cn9fgxk3IcOyMo5AWJd5ft9mVuXxaWYyMk",
+    "TWITTER_ACCESS_TOKEN": "40727971-w03y24Plpro2skDgQHfVxDFavhGSUYWIuRCrqDOp8",
+    "TWITTER_ACCESS_TOKEN_SECRET": "d44cykFJjSJSJDQgdnISPo62vPNElJtNKepTk40Vcgk",
+    "INSTAGRAM_CLIENT_ID": "46534601ead144e9963e8dbda285b99f",
+    "INSTAGRAM_SECRET": "767008cf8a604e7fa6508aa7e074e2bc",
+    "RABBITMQ_URL": "amqp://brickflow:L1711MNaK@kitana.brickflow.com",
+    "RABBITMQ_CREDENTIALS": {
+      "host": "kitana.brickflow.com",
+      "login": "brickflow",
+      "password": "L1711MNaK"
+    },
+    "SOLR_CONFIG": {
+      "host": "reptile.brickflow.com",
+      "port": 8080
+    },
+    "SOLR_CREDENTIALS": {
+      "username": "brickflow",
+      "password": "L1711MNaK"
+    },
+    "INSTAGRAM_ACCESS_TOKEN": "295774446.c507ac7.de3367085e9f48f7ab84c4fb4388aced",
+    "VINE_KEY": "1007016593449996288-7756c3af-349d-4a7f-90ab-25a5846491c9",
+    "VINE_USERID": 1007016593449996288,
+    "VINE_USERNAME": "David Judik",
+    "VINE_EMAIL": "judik.david@gmail.com",
+    "VINE_PASSWORD": "brickfl0w",
+    "AWS_ACCESS_KEY_ID": "AKIAJ5T7C63QQFKM3YQQ",
+    "AWS_SECRET_ACCESS_KEY": "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",
+    "LOGSTASH_HOST": "raiden.brickflow.com"
+  }
+}

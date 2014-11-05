@@ -1,0 +1,31 @@
+{
+  "TUMBLR_CREDENTIALS": {
+    "consumer_key": "lSmUjeH9z2sl9HTr2VtzYIcJ7Q0Yyl1jMmsG9MVCHSQI7E8a4t",
+    "consumer_secret": "h5covcSDoQjpWoOxYi81nn6qLDoRPjAsJQozYSbsRPsX49ejop"
+  },
+  "RABBITMQ_URL": "amqp://guest:guest@localhost:5672",
+  "MONGODB_URL": "localhost:27017/brickflow",
+  "DEBUG": true,
+
+
+  "private": {
+    "GIPHY_APP_KEY": "dc6zaTOxFJmzC",
+    "TUMBLR_APP_KEY": "lSmUjeH9z2sl9HTr2VtzYIcJ7Q0Yyl1jMmsG9MVCHSQI7E8a4t",
+    "TUMBLR_APP_SECRET": "h5covcSDoQjpWoOxYi81nn6qLDoRPjAsJQozYSbsRPsX49ejop",
+    "dbaccess": "localhost:27017/brickflow",
+    "RABBITMQ_CREDENTIALS": {},
+    "TWITTER_KEY": "g7rRGIdhLlAZQ8GOGQONuQ",
+    "TWITTER_SECRET": "kUaT1xlcZZOisBSycODCA9ejaib7bd7o5YBMfXdgD0",
+    "TWITTER_ACCESS_TOKEN": "40727971-286AKQwX35rEeLIO34yQT3CoLB4KbYbHynW6Kg",
+    "TWITTER_ACCESS_TOKEN_SECRET": "eAIwq2KQwTedCGIFfevs7y2PDTGfj5L8mbifU1oLQ",
+    "INSTAGRAM_CLIENT_ID": "c507ac7670f4495689cf5b66d1cd75c0",
+    "INSTAGRAM_SECRET": "ff9d5aade31842b78636304b5653cf24",
+    "INSTAGRAM_ACCESS_TOKEN": "295774446.c507ac7.de3367085e9f48f7ab84c4fb4388aced",
+    "VINE_KEY": "1007016593449996288-7756c3af-349d-4a7f-90ab-25a5846491c9",
+    "VINE_USERID": 1007016593449996288,
+    "VINE_USERNAME": "David Judik",
+    "VINE_EMAIL": "judik.david@gmail.com",
+    "VINE_PASSWORD": "brickfl0w",
+    "LOGSTASH_HOST": "localhost"
+  }
+}
