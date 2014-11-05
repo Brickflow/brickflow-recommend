@@ -16,18 +16,17 @@ module.exports = function listen(options) {
   });
   rpc.on(options.queueName, function(task, cb) {
     var dt = measure.time('recommend-rpc');
-    console.log('RECOMMMEND YOU BITCH', task, cb);
-    require('./actions/' + task.action).apply(null, task.params.concat([
-      function(err, res) {
-        (cb || _.noop)(err, res);
-        options.logger[err ? 'error' : 'info'](options.queueName + '-api-response', {
-          action: task.action,
-          // params: task.params,
-          doneAt: new Date(),
-          running: dt.count('recommend-rpc'),
-          queryDuration: dt.end(),
-          hasCb: !!cb
-        });
-      }]));
+    require('./actions/' + task.action).apply(
+        null, task.params.concat([function(err, res) {
+      (cb || _.noop)(err, res);
+      options.logger[err ? 'error' : 'info'](options.queueName + '-api-response', {
+        action: task.action,
+        // params: task.params,
+        doneAt: new Date(),
+        running: dt.count('recommend-rpc'),
+        queryDuration: dt.end(),
+        hasCb: !!cb
+      });
+    }]));
   });
 };

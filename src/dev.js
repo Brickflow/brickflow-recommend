@@ -28,8 +28,8 @@ setTimeout(function() {
     tumblrUsername: 'ifroz',
     tumblrAccessToken: 'SBn0tTR0oes6b8NhqktvLUJU1LsJs2KE2L7eUsySQOxqaXXw1s',
     tumblrSecret: '6OY67hfHRHBV0xzepBXPLBWeAoAlpTfP09qLsJyOHIm1fpeSxK'
-  }, function() {
+  }/* , function() {
    console.log('ARGS LOGGED:', arguments);
    process.exit(0);
-  });
+   } */);
 }, 2000);
