@@ -3,3 +3,5 @@ atlassian-ide-plugin.xml
 node_modules
 log
 config/local.json
+newrelic_agent.log
+npm-debug.log
