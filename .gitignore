@@ -5,3 +5,4 @@ log
 config/local.json
 newrelic_agent.log
 npm-debug.log
+src/dev.js
