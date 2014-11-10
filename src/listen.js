@@ -16,6 +16,9 @@ module.exports = function listen(options) {
   });
   rpc.on(options.queueName, function(task, cb) {
     var dt = measure.time('recommend-rpc');
+    options.logger(options.queueName + 'api-call', {
+      action: task.action
+    });
     require('./actions/' + task.action).apply(
         null, task.params.concat([function(err, res) {
       (cb || _.noop)(err, res);
