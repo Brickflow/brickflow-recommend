@@ -4,7 +4,7 @@ var factory = require('amqp-rpc').factory;
 var defaultLogger = require('./utils/dummyLogger');
 var measure = require('./utils/measure');
 
-var ACTIONS = ['register'];
+var ACTIONS = ['register', 'updateFeedCache'];
 
 var instances = {};
 function getRPC(url) {
