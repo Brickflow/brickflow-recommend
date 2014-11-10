@@ -16,6 +16,7 @@ function getRPC(url) {
 
 module.exports = function createClient(options) {
   options = _.defaults(options || {}, {
+    exchange: 'recommend-rpc',
     queueName: 'recommend-rpc',
     url: 'amqp://guest:guest@localhost:5672'
   });
