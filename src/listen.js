@@ -12,6 +12,7 @@ module.exports = function listen(options) {
     url: 'amqp://guest:guest@localhost:5672'
   });
   var rpc = amqpRPC.factory({
+    exchange: options.exchange || options.queueName,
     url: options.url
   });
   rpc.on(options.queueName, function(task, cb) {

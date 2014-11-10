@@ -24,7 +24,7 @@ module.exports = function createClient(options) {
   var rpc = getRPC(options.url);
 
   function query(action) {
-    var args = Array.prototype.slice.call(arguments, 0);
+    var args = Array.prototype.slice.call(null, arguments, 0);
     var hasCb = typeof _.last(args) === 'function';
     var cb = hasCb ? _.last(args) : _.noop;
     var params = args.slice(1, hasCb ? -1 : undefined);
