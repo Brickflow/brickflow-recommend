@@ -3,6 +3,7 @@ require('brickflow-common'); // initialize
 var amqpConnection = require('brickflow-common/service/rabbitmq/connection');
 
 var config = require('../config');
+
 var metrics = require('brickflow-logger')({
   logstash: {
     port: config.get('LOGSTASH_PORT'),

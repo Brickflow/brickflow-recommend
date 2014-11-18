@@ -45,6 +45,6 @@
     "VINE_PASSWORD": "brickfl0w",
     "AWS_ACCESS_KEY_ID": "AKIAJ5T7C63QQFKM3YQQ",
     "AWS_SECRET_ACCESS_KEY": "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",
-    "LOGSTASH_HOST": "raiden.brickflow.com"
+    "LOGSTASH_HOST": "172.30.1.144"
   }
 }
