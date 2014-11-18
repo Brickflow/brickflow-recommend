@@ -4,7 +4,14 @@ var factory = require('amqp-rpc').factory;
 var defaultLogger = require('./utils/dummyLogger');
 var measure = require('./utils/measure');
 
-var ACTIONS = ['register', 'updateFeedCache'];
+var ACTIONS = [
+  'register',
+  'updateFeedCache',
+  'updateYourCache',
+  'updateBlogCache',
+  'updateBlogFallbackCache',
+  'updateTrendingCache'
+];
 
 var instances = {};
 function getRPC(url) {
@@ -25,7 +32,7 @@ module.exports = function createClient(options) {
   var rpc = getRPC(options.url);
 
   function query(action) {
-    var args = Array.prototype.slice.call(null, arguments, 0);
+    var args = Array.prototype.slice.call(arguments);
     var hasCb = typeof _.last(args) === 'function';
     var cb = hasCb ? _.last(args) : _.noop;
     var params = args.slice(1, hasCb ? -1 : undefined);

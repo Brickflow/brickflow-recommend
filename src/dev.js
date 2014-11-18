@@ -25,11 +25,14 @@ var client = require('./client')({
 setTimeout(function() {
   console.log('DATS HAPPENING');
   client.register({
+//  client.updateYourCache({
     tumblrUsername: 'ifroz',
+    hash: '12312312312312331233212131232312123',
     tumblrAccessToken: 'SBn0tTR0oes6b8NhqktvLUJU1LsJs2KE2L7eUsySQOxqaXXw1s',
     tumblrSecret: '6OY67hfHRHBV0xzepBXPLBWeAoAlpTfP09qLsJyOHIm1fpeSxK'
-  }/* , function() {
-   console.log('ARGS LOGGED:', arguments);
-   process.exit(0);
-   } */);
+    }, function(err,res) {
+    console.log('MEGBASZATTAM A FEEDET');
+    console.dir(arguments);
+  });
+//  client.updateTrendingCache(function() { console.log('RETURND', arguments); });
 }, 2000);
