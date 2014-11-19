@@ -9,7 +9,9 @@ var metrics = require('brickflow-logger')({
     nodeName: config.get('LOGSTASH_APP_NAME'),
     host: config.get('private:LOGSTASH_HOST')
   },
-  amqp: amqpConnection
+  amqp: {
+    connection: amqpConnection
+  }
 });
 
 //require('./listen')({
