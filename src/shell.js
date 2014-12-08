@@ -14,10 +14,14 @@ var metrics = require('brickflow-logger')({
   }
 });
 
+var User = require('brickflow-common/model/user');
+
 var client = require('./client')({
   logger: metrics.createTracker('recommendRpc'),
   url: config.get('private:RABBITMQ_URL')
 });
+
+console.log('ARGV', process.argv);
 
 setTimeout(function() {
   var args = [function(err) {
@@ -29,6 +33,12 @@ setTimeout(function() {
   }];
   if (process.argv[3]) {
     args = process.argv.slice(3).concat(args);
+    User.findOne({tumblrUsername: args[0]}, {
+      tumblrUsername: 1,
+      tumblrAccessToken: 1,
+      tumblrSecret: 1}, function(err, user) {
+      args[0] = user;
+      client[process.argv[2]].apply(null, args);
+    });
   }
-  client[process.argv[2]].apply(null, args);
 }, 2000); // TODO FIXME

@@ -6,24 +6,27 @@ var measure = require('./utils/measure');
 
 var ACTIONS = [
   'register',
-  'updateFeedCache',
-  'updateYourCache',
   'updateBlogCache',
   'updateBlogFallbackCache',
-  'updateTrendingCache'
+  'updateFeedCache',
+  'updateFirstLayerBlogsCache',
+  'updateInterestingBlogsCache',
+  'updateInterestingHashtagsCache',
+  'updateTrendingCache',
+  'updateYourCache'
 ];
 
 var instances = {};
 function getRPC(url) {
   if (!instances[url]) {
-    instances[url] = factory({url: url});
+    instances[url] = factory({url: url, exchange: 'recommend_rpc_exchange'});
   }
   return instances[url];
 }
 
 module.exports = function createClient(options) {
   options = _.defaults(options || {}, {
-    exchange: 'recommend-rpc',
+    exchange: 'recommend_rpc_exchange',
     queueName: 'recommend-rpc',
     url: 'amqp://guest:guest@localhost:5672'
   });
