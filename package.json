@@ -26,6 +26,6 @@
     "mongoose-findorcreate": "^0.1.2",
     "nconf": "^0.6.9",
     "newrelic": "^1.12.1",
-    "tumblr-rpc": "0.0.1"
+    "tumblr-rpc": "0.0.7"
   }
 }
