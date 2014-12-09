@@ -19,6 +19,7 @@
     "async": "^0.9.0",
     "brickflow-common": "git+ssh://git@github.com/Brickflow/brickflow-common.git",
     "brickflow-logger": "^0.2.1",
+    "brickflow-recommend-client": "git+ssh://git@github.com/Brickflow/brickflow-recommend-client.git",
     "lodash": "^2.4.1",
     "mongodb": "^1.4.19",
     "mongoose": "^3.8.18",
